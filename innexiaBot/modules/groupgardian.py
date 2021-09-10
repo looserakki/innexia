@@ -11,7 +11,7 @@ from telethon.tl.types import ChatBannedRights
 from innexiaBot import BOT_ID
 from innexiaBot.pyrogramee.telethonbasics import is_admin
 from innexiaBot.events import register
-from innexiaBot.mongo import mongodb as db
+from innexiaBot.mongo import db
 from innexiaBot import telethn as tbot
 
 translator = google_translator()
