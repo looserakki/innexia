@@ -51,7 +51,7 @@ def speedtestxyz_callback(update: Update, context: CallbackContext):
         query.answer("You are required to join Heroes Association to use this command.")
 
 
-SPEED_TEST_HANDLER = DisableAbleCommandHandler("speedtest", speedtestxyz)
+SPEED_TEST_HANDLER = DisableAbleCommandHandler("speedtest", speedtest_image)
 SPEED_TEST_CALLBACKHANDLER = CallbackQueryHandler(
     speedtestxyz_callback, pattern="speedtest_.*"
 )
