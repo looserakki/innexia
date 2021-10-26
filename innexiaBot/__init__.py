@@ -29,19 +29,19 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
-    TOKEN = os.environ.get("TOKEN", None)
+    TOKEN = os.environ.get("TOKEN", "1728730929:AAHpuAEOph7_QVA3kswuU2xcjYMuSwhZmu8")
 
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", None))
+        OWNER_ID = int(os.environ.get("OWNER_ID", "2007701745"))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-    JOIN_LOGGER = os.environ.get("JOIN_LOGGER", None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    JOIN_LOGGER = os.environ.get("JOIN_LOGGER", "-1001504294786")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "piroXpower")
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
-        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "1669178360 1920106383 2007701745 1956381927 936481432 1756265729 1747260012 1753777248 1975644370").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
@@ -61,17 +61,17 @@ if ENV:
         raise Exception("Your tiger users list does not contain valid integers.")
 
     INFOPIC = bool(os.environ.get("INFOPIC", False))
-    EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
+    EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001504294786")
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
-    API_ID = os.environ.get("API_ID", None)
-    API_HASH = os.environ.get("API_HASH", None)
-    BOT_ID = int(os.environ.get("BOT_ID", None))
-    DB_URI = os.environ.get("DATABASE_URL")
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
-    DONATION_LINK = os.environ.get("DONATION_LINK")
+    API_ID = os.environ.get("API_ID", "3546656")
+    API_HASH = os.environ.get("API_HASH", "48b79c54af688f05c350161bddea414c")
+    BOT_ID = int(os.environ.get("BOT_ID", "1728730929"))
+    DB_URI = os.environ.get("DATABASE_URL", "postgres://gwkzhhbs:NOJ3vxff6j73vWasyF2-LCY7nVKngK2-@ziggy.db.elephantsql.com/gwkzhhbs")
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://Evil:NRb0LXgSBdao6tHB@cluster0.phtr6.mongodb.net/EvilretryWrites=true&w=majority")
+    DONATION_LINK = os.environ.get("DONATION_LINK", "https://t.me/piroXpower")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
@@ -79,16 +79,16 @@ if ENV:
     VIRUS_API_KEY = os.environ.get("VIRUS_API_KEY", None)
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
-    DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
-    STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", False))
+    DEL_CMDS = bool(os.environ.get("DEL_CMDS", True)
+    STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     WORKERS = int(os.environ.get("WORKERS", 8))
     BAN_STICKER = os.environ.get("BAN_STICKER", "CAADAgADOwADPPEcAXkko5EB3YGYAg")
-    ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
+    ALLOW_EXCL = os.environ.get("ALLOW_EXCL", True)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "DeCodeSupport")
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
 
