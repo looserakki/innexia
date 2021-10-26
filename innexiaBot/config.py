@@ -1,3 +1,5 @@
+from innexiaBot.sample_config import Config
+
 class Development(Config):
     OWNER_ID = 2007701745  # your telegram ID
     OWNER_USERNAME = "piroxpower"  # your telegram username
