@@ -1,9 +1,9 @@
-from LaylaRobot.sample_config import Config
+from innexiaBot.sample_config import Config
 
 class Development(Config):
     OWNER_ID = 2007701745  # your telegram ID
     OWNER_USERNAME = "piroxpower"  # your telegram username
-    API_KEY = "1728730929:AAHpuAEOph7_QVA3kswuU2xcjYMuSwhZmu8"  # your api key, as provided by the @botfather
+    TOKEN = "1728730929:AAHpuAEOph7_QVA3kswuU2xcjYMuSwhZmu8"  # your api key, as provided by the @botfather
     SQLALCHEMY_DATABASE_URI = 'postgres://oknsunpy:Gq78-oFzocoxGa_v_b628xb-5c8jZJOc@batyr.db.elephantsql.com/oknsunpy'  # sample db credentials
     MESSAGE_DUMP = '-1001504294786' # some group chat that your bot is a member of
     USE_MESSAGE_DUMP = True
