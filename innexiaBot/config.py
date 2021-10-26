@@ -17,6 +17,5 @@ class Development(Config):
     API_HASH = "48b79c54af688f05c350161bddea414c"
     SUPPORT_CHAT ="DECODESUPPORT"
     MONGO_DB_URI = "mongodb+srv://Evil:NRb0LXgSBdao6tHB@cluster0.phtr6.mongodb.net/EvilretryWrites=true&w=majority"
-    SUDO_USERS = [1669178360, , 2007701745, 1956381927, 936481432, 1756265729, 1747260012, 1753777248, 1975644370]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
