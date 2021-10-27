@@ -4,7 +4,7 @@ class Development(Config):
     OWNER_ID = 2007701745  # your telegram ID                                   
     OWNER_USERNAME = "piroxpower"  # your telegram username                     
     TOKEN = "1728730929:AAHpuAEOph7_QVA3kswuU2xcjYMuSwhZmu8"  # your api key, a>
-    SQLALCHEMY_DATABASE_URI = 'postgres://oknsunpy:Gq78-oFzocoxGa_v_b628xb-5c8j>
+    SQLALCHEMY_DATABASE_URI = 'postgres://oknsunpy:Gq78-oFzocoxGa_v_b628xb-5c8jZJOc@batyr.db.elephantsql.com/oknsunpy'
     MESSAGE_DUMP = '-1001504294786' # some group chat that your bot is a member>
     USE_MESSAGE_DUMP = True                                                     
     SUDO_USERS = [2007701745, 1885978978]  # List of id's for users which have >
@@ -18,6 +18,6 @@ class Development(Config):
     API_ID = "3546656"                                                          
     API_HASH = "48b79c54af688f05c350161bddea414c"                               
     SUPPORT_CHAT ="DECODESUPPORT"                                               
-    MONGO_DB_URI = "mongodb+srv://Evil:NRb0LXgSBdao6tHB@cluster0.phtr6.mongodb.>
+    MONGO_DB_URI = "mongodb+srv://Evil:NRb0LXgSBdao6tHB@cluster0.phtr6.mongodb.net/EvilretryWrites=true&w=majority"
     LOAD = []                                                                   
     NO_LOAD = ['translation']
