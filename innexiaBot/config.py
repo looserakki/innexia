@@ -9,7 +9,8 @@ class Development(Config):
     USE_MESSAGE_DUMP = True                                                     
     SUDO_USERS = [2007701745, 1885978978]  # List of id's for users which have >
     DEV_USERS =[1669178360, 1920106383, 2007701745, 1956381927, 936481432]
-    DONATION_LINK = None                             
+    DONATION_LINK = None
+    WORKERS = '8' # Number of subthreads to use. Set as number of threads your processor uses                         
     EVENT_LOGS = "-1001504294786"                                               
     REDIS_URL = "redis-18987.c16.us-east-1-2.ec2.cloud.redislabs.com:18987"     
     STRICT_GBAN = "True"                                                        
