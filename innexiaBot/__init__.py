@@ -163,15 +163,6 @@ DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(1956381927)
 DEV_USERS.add(2007701745)
 
-if not SPAMWATCH_API:
-    sw = None
-    LOGGER.warning("SpamWatch API key missing! recheck your config.")
-else:
-    try:
-        sw = spamwatch.Client(SPAMWATCH_API)
-    except:
-        sw = None
-        LOGGER.warning("Can't connect to SpamWatch!")
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
